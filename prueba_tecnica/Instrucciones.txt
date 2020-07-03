@@ -1,0 +1,8 @@
+Instrucciones:
+
+- El objetivo es desarrollar la pieza publicitaria mostrada en el video.
+- La url de donde debe redirigir al pulsar el botón final es https://www.bacardi.com/
+- Se puede añadir toda la interacción y animación que se quiera. 
+- Se debe intenter hacer un desarrollo adaptado a móvil, asegurando que se ve correctamente como mínimo en una pantalla de móvil de 320x480px.
+- No utilizar ningún framework tipo Bootstrap ni similares.
+- La idea es mostrar las destrezas y los conocimientos que se tienen, dando libertad a la creatividad.

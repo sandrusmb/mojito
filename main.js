@@ -20,8 +20,7 @@ const picturesRight = [
     "/images/limas-right.png",
     "/images/menta-right.png",
     "/images/bacardi-right.png",
-    "/images/hielo-right.png",
-    /* "/images/soda-right.png", */
+    "/images/hielo-right.png"
 ];
 
 const gameLeft = document.querySelector(".game-left");
@@ -40,14 +39,12 @@ function createLeftImg() {
         const textLeft = document.createElement("p");
         textLeft.innerHTML = `${ingredientsName[0]}`
         textLeft.classList.add("text-left");
-
         gameLeft.appendChild(leftImg);
         gameLeft.appendChild(textLeft);
         picturesLeft.splice(0, 1);
         ingredientsName.splice(0, 1);
     }
     else {
-        /*    game.classList.remove("game"); */
         gameLeft.classList.add("close");
         info.classList.add("close");
         info.classList.remove("info");
@@ -77,7 +74,6 @@ function createRightImg() {
         rightFinal.alt = "caca";
         gameRight.appendChild(rightFinal);
         gameRight.classList.remove("game-right");
-
     }
 }
 
@@ -94,8 +90,6 @@ function createButton() {
     btn.href = "https://www.bacardi.com/es/es/";
     btn.target = "_blank";
     btn.innerText = "Ven a por tu mojito Bacardi";
-
-
     footer.appendChild(btn);
 }
 

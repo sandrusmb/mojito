@@ -2,9 +2,21 @@
 
 const getImage = "/images/limon-exprimido.png";
 const getImage2 = "/images/menta-vaso2.png";
+
 const cta = document.querySelector(".cta");
 const coctelLeft = document.querySelector(".coctel-left");
 const container = document.querySelector("#container");
+
+const leftPictures = [
+    "/images/limas-left.png",
+    "/images/menta-left.png",
+    "/images/bacardi-left.png",
+    "/images/hielo-left.png",
+    "/images/soda-left.png",
+];
+
+const image = DataTransfer("leftPictures[0]");
+console.log(image);
 
 function getCta() {
     const subtitle = document.createElement("p");

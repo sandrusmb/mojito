@@ -39,7 +39,6 @@ transform: translateY(-4rem);
     display:flex;
     flex-direction: column;
     align-items: flex-end;
-    
 }
 
 .img-left{
@@ -47,16 +46,15 @@ transform: translateY(-4rem);
     margin:0 0 0 auto;
     height: 200px;
     padding-right: 1rem;
-    
 }
 
 .text-left{
-color:white;
-display:block;
-margin:0 0 0 auto;
-width: 150px;
-text-align: center;
-font-size: 0.8rem;
+    color:white;
+    display:block;
+    margin:0 0 0 auto;
+    width: 150px;
+    text-align: center;
+    font-size: 0.8rem;
 }
 
 .game-right{
@@ -98,7 +96,6 @@ font-size: 0.8rem;
 .info{
     display:block;
     margin:2rem auto 0 auto;
-   
 }
 
 .info-text{

@@ -71,9 +71,9 @@ function createRightImg() {
         rightFinal.classList.add("final");
         rightFinal.classList.add("effect");
         rightFinal.src = "images/vaso-final2.png";
-        rightFinal.alt = "caca";
         gameRight.appendChild(rightFinal);
         gameRight.classList.remove("game-right");
+        createLights();
     }
 }
 
@@ -91,6 +91,26 @@ function createButton() {
     btn.target = "_blank";
     btn.innerText = "Ven a por tu mojito Bacardi";
     footer.appendChild(btn);
+}
+
+function createLights() {
+    setTimeout(() => {
+        const divLight = document.createElement("div");
+        divLight.classList.add("light-container");
+        const lightOne = document.createElement("img");
+        lightOne.src = "images/destello1.png";
+        lightOne.classList.add("light1-right");
+        divLight.appendChild(lightOne);
+        setTimeout(() => {
+            const lightTwo = document.createElement("img");
+            lightTwo.src = "images/destello2.png";
+            lightTwo.classList.add("light2-right");
+            divLight.appendChild(lightTwo);
+        }, 2000);
+    }, 2000);
+
+    gameRight.appendChild(divLight);
+
 }
 
 function deleteLeftImg() {

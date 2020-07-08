@@ -132,3 +132,39 @@ transform: translateY(-4rem);
     font-size: 0.5rem;
 }
 
+.light-container{
+    width: 100px;
+    height: 300px;
+    position:relative;
+    display:block;
+    margin: -8rem auto;
+}
+
+.light1-right{
+    position: absolute;
+    top:3rem;
+    height: 2rem;
+    animation-name: star;
+    animation-duration: 2s;
+}
+
+.light2-right{
+        position: absolute;
+        top:0.4rem;
+        left: 3rem;
+        height: 2rem;
+        animation-name: star;
+        animation-duration: 2s;
+
+}
+
+@keyframes star {
+    from {
+        transform: rotate(0deg) scale(0.1);
+      
+    }
+    to {
+        transform: rotate(360deg) scale(1);
+       
+    }
+  } 

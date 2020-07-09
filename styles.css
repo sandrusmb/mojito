@@ -12,26 +12,55 @@
 body{
     background-color: black; 
     font-family:"Gotham";
-   
+  /*   border:1px solid firebrick; */
 }
 
 .logo{
     display: block;
     margin: 1rem auto;
     height: 5rem;
+  /*   border:1px solid rosybrown; */
 }
 
 .title{
     color:white;
     text-align: center;
     padding:0 3rem;
+   /*  border:1px solid palegreen; */
 }
+
+/* cursor y flecha */
+
+.info{
+    display:block;
+    margin:2rem auto 0 auto;
+   /*  border:1px solid palevioletred; */
+}
+
+.info-text{
+    color:white;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 0.5rem;
+   /*  border:1px solid olive; */
+}
+
+.info-arrow{
+    display:block;
+    margin:auto;
+    width: 15rem;
+  /*   border:1px solid orchid; */
+}
+
+/* ingredientes y coctel */
 
 .game{
 display:flex;
 flex-direction: row;
 justify-content: center;
-transform: translateY(-4rem);
+/* transform: translateY(-4rem); */
+/* border:3px solid mediumturquoise; */
+height: 200px;
 }
 
 .game-left{
@@ -39,6 +68,7 @@ transform: translateY(-4rem);
     display:flex;
     flex-direction: column;
     align-items: flex-end;
+   /*  border:1px solid coral; */
 }
 
 .img-left{
@@ -46,6 +76,7 @@ transform: translateY(-4rem);
     margin:0 0 0 auto;
     height: 200px;
     padding-right: 1rem;
+    /* border:1px solid grey; */
 }
 
 .text-left{
@@ -55,68 +86,31 @@ transform: translateY(-4rem);
     width: 150px;
     text-align: center;
     font-size: 0.8rem;
+/*     border:1px solid sienna; */
 }
 
 .game-right{
     width: 50%;
     position: relative;
+/*     border:1px solid white; */
+    
 }
 
 .img-right{
     height: 200px;
     position: absolute;
+   /*  border:1px solid tomato; */
 }
 
-.effect{
-    transition: opacity ease 1s;
-    animation-name: intro;
-    animation-duration: 2s;
-}
-
-@keyframes intro {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-
-.close{
-    display:none;
-}
-
-.final{
-    display:block;
-    margin:  0 0;
-    height: 200px;
-    transform: translateY(4rem);
-}
-
-.info{
-    display:block;
-    margin:2rem auto 0 auto;
-}
-
-.info-text{
-    color:white;
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 0.5rem;
-}
-
-.info-arrow{
-    display:block;
-    margin:auto;
-    width: 15rem;
-}
-
-.covert{
-    opacity:0;
-}
+/* botón */
 
 .footer{
     margin-top:1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  /*   border:1px solid hotpink; */
 }
 
 .footer-btn{
@@ -127,17 +121,20 @@ transform: translateY(-4rem);
     border:1px solid white;
     text-align: center;
     text-decoration: none;
-    display:block;
-    margin:0 3rem;
+    /* display:block;
+    margin: auto; */
     font-size: 0.5rem;
+width: 200px;
+/* border:3px solid royalblue; */
+   
 }
 
 .light-container{
     width: 100px;
-    height: 300px;
     position:relative;
     display:block;
-    margin: -8rem auto;
+    margin: -12.1rem auto;
+   /*  border:1px solid maroon; */
 }
 
 .light1-right{
@@ -146,6 +143,7 @@ transform: translateY(-4rem);
     height: 2rem;
     animation-name: star;
     animation-duration: 2s;
+   /*  border:1px solid seagreen; */
 }
 
 .light2-right{
@@ -154,17 +152,92 @@ transform: translateY(-4rem);
         left: 3rem;
         height: 2rem;
         animation-name: star;
-        animation-duration: 2s;
-
+        animation-duration: 1s;
+      /*   border:1px solid violet; */
 }
 
-@keyframes star {
+/* efectos */
+
+.effect{
+    /* border:1px solid orange; */
+    transition: opacity ease 1s;
+    animation-name: intro;
+    animation-duration: 2s;
+}
+
+.move{
+    animation-name: shake; 
+    animation-duration: 2s;
+    height: 200px;
+}
+
+.close{
+    display:none;
+}
+
+.final{
+   /*  border:1px solid yellow; */
+    display:block;
+    height: 200px;
+  /*   transform: translateY(4rem); */
+}
+
+.covert{
+    opacity:0;
+}
+
+/*   animaciones */
+
+@keyframes intro {
     from {
-        transform: rotate(0deg) scale(0.1);
-      
+      opacity: 0;
     }
     to {
-        transform: rotate(360deg) scale(1);
-       
+      opacity: 1;
+    }
+  }
+
+  @keyframes shake {
+    0% { 
+        transform: translate(0, 2px); 
+    }
+    10% { 
+        transform: translate(0px, 0px); 
+    }
+    20% { 
+        transform: translate(0px, -2px);  
+    }
+    30% { 
+        transform: translate(0px, 0px); 
+    }
+    40% { 
+        transform: translate(0px, 2px); 
+    }
+    50% { 
+        transform: translate(0px, 0px); 
+    }
+    60% { 
+        transform: translate(0px, -2px); 
+    }
+    70% { 
+        transform: translate(0px, 0px); 
+    }
+    80% { 
+        transform: translate(0px, 2px); 
+    }
+    90% { 
+        transform: translate(0px, 0px); 
+    }
+    100% { 
+        transform: translate(0px, -2px); 
+    }
+  } 
+
+  @keyframes star {
+    from {
+        transform: rotate(0deg) scale(0.1);
+    }
+    to {
+        transform: rotate(360deg) scale(1.2);
     }
   } 

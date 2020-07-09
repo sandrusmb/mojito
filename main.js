@@ -65,6 +65,7 @@ function createRightImg() {
         picturesRight.splice(0, 1);
     }
     else {
+
         deleteLeftImg();
         deleteRightImg();
         const rightFinal = document.createElement("img");
@@ -73,7 +74,10 @@ function createRightImg() {
         rightFinal.src = "images/vaso-final2.png";
         gameRight.appendChild(rightFinal);
         gameRight.classList.remove("game-right");
-        createLights();
+        rightFinal.classList.add("move");
+        setTimeout(() => {
+            createLights()
+        }, 2000);
     }
 }
 
@@ -94,23 +98,19 @@ function createButton() {
 }
 
 function createLights() {
+    const divLight = document.createElement("div");
+    divLight.classList.add("light-container");
+    const lightOne = document.createElement("img");
+    lightOne.src = "images/destello1.png";
+    lightOne.classList.add("light1-right");
+    divLight.appendChild(lightOne);
     setTimeout(() => {
-        const divLight = document.createElement("div");
-        divLight.classList.add("light-container");
-        const lightOne = document.createElement("img");
-        lightOne.src = "images/destello1.png";
-        lightOne.classList.add("light1-right");
-        divLight.appendChild(lightOne);
-        setTimeout(() => {
-            const lightTwo = document.createElement("img");
-            lightTwo.src = "images/destello2.png";
-            lightTwo.classList.add("light2-right");
-            divLight.appendChild(lightTwo);
-        }, 2000);
-    }, 2000);
-
+        const lightTwo = document.createElement("img");
+        lightTwo.src = "images/destello2.png";
+        lightTwo.classList.add("light2-right");
+        divLight.appendChild(lightTwo);
+    }, 1000);
     gameRight.appendChild(divLight);
-
 }
 
 function deleteLeftImg() {

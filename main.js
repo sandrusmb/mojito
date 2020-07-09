@@ -65,7 +65,6 @@ function createRightImg() {
         picturesRight.splice(0, 1);
     }
     else {
-
         deleteLeftImg();
         deleteRightImg();
         const rightFinal = document.createElement("img");

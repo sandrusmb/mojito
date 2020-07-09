@@ -12,29 +12,25 @@
 body{
     background-color: black; 
     font-family:"Gotham";
-  /*   border:1px solid firebrick; */
 }
 
 .logo{
     display: block;
-    margin: 1rem auto;
+    margin: 0.5rem auto 1rem auto;
     height: 5rem;
-  /*   border:1px solid rosybrown; */
 }
 
 .title{
     color:white;
     text-align: center;
     padding:0 3rem;
-   /*  border:1px solid palegreen; */
 }
 
 /* cursor y flecha */
 
 .info{
     display:block;
-    margin:2rem auto 0 auto;
-   /*  border:1px solid palevioletred; */
+    margin:1rem auto 0 auto;
 }
 
 .info-text{
@@ -42,25 +38,21 @@ body{
     text-transform: uppercase;
     text-align: center;
     font-size: 0.5rem;
-   /*  border:1px solid olive; */
 }
 
 .info-arrow{
     display:block;
     margin:auto;
     width: 15rem;
-  /*   border:1px solid orchid; */
 }
 
 /* ingredientes y coctel */
 
 .game{
-display:flex;
-flex-direction: row;
-justify-content: center;
-/* transform: translateY(-4rem); */
-/* border:3px solid mediumturquoise; */
-height: 200px;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 200px;
 }
 
 .game-left{
@@ -68,7 +60,6 @@ height: 200px;
     display:flex;
     flex-direction: column;
     align-items: flex-end;
-   /*  border:1px solid coral; */
 }
 
 .img-left{
@@ -76,7 +67,6 @@ height: 200px;
     margin:0 0 0 auto;
     height: 200px;
     padding-right: 1rem;
-    /* border:1px solid grey; */
 }
 
 .text-left{
@@ -86,20 +76,16 @@ height: 200px;
     width: 150px;
     text-align: center;
     font-size: 0.8rem;
-/*     border:1px solid sienna; */
 }
 
 .game-right{
     width: 50%;
     position: relative;
-/*     border:1px solid white; */
-    
 }
 
 .img-right{
     height: 200px;
     position: absolute;
-   /*  border:1px solid tomato; */
 }
 
 /* botón */
@@ -110,7 +96,6 @@ height: 200px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  /*   border:1px solid hotpink; */
 }
 
 .footer-btn{
@@ -121,12 +106,8 @@ height: 200px;
     border:1px solid white;
     text-align: center;
     text-decoration: none;
-    /* display:block;
-    margin: auto; */
     font-size: 0.5rem;
-width: 200px;
-/* border:3px solid royalblue; */
-   
+    width: 200px; 
 }
 
 .light-container{
@@ -134,7 +115,6 @@ width: 200px;
     position:relative;
     display:block;
     margin: -12.1rem auto;
-   /*  border:1px solid maroon; */
 }
 
 .light1-right{
@@ -143,23 +123,20 @@ width: 200px;
     height: 2rem;
     animation-name: star;
     animation-duration: 2s;
-   /*  border:1px solid seagreen; */
 }
 
 .light2-right{
-        position: absolute;
-        top:0.4rem;
-        left: 3rem;
-        height: 2rem;
-        animation-name: star;
-        animation-duration: 1s;
-      /*   border:1px solid violet; */
+    position: absolute;
+    top:0.4rem;
+    left: 3rem;
+    height: 2rem;
+    animation-name: star;
+    animation-duration: 1s;
 }
 
 /* efectos */
 
 .effect{
-    /* border:1px solid orange; */
     transition: opacity ease 1s;
     animation-name: intro;
     animation-duration: 2s;
@@ -176,10 +153,8 @@ width: 200px;
 }
 
 .final{
-   /*  border:1px solid yellow; */
     display:block;
     height: 200px;
-  /*   transform: translateY(4rem); */
 }
 
 .covert{
@@ -199,37 +174,37 @@ width: 200px;
 
   @keyframes shake {
     0% { 
-        transform: translate(0, 2px); 
+        transform: translate(0, 4px); 
     }
     10% { 
         transform: translate(0px, 0px); 
     }
     20% { 
-        transform: translate(0px, -2px);  
+        transform: translate(0px, -4px);  
     }
     30% { 
         transform: translate(0px, 0px); 
     }
     40% { 
-        transform: translate(0px, 2px); 
+        transform: translate(0px, 4px); 
     }
     50% { 
         transform: translate(0px, 0px); 
     }
     60% { 
-        transform: translate(0px, -2px); 
+        transform: translate(0px, -4px); 
     }
     70% { 
         transform: translate(0px, 0px); 
     }
     80% { 
-        transform: translate(0px, 2px); 
+        transform: translate(0px, 4px); 
     }
     90% { 
         transform: translate(0px, 0px); 
     }
     100% { 
-        transform: translate(0px, -2px); 
+        transform: translate(0px, -4px); 
     }
   } 
 
